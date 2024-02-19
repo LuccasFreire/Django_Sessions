@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block 'titulo' %} Cadastro {% endblock %}
+
+{% block 'conteudo' %}
+<div class="container mt-3">
+  <form>
+    <div class="mb-3 col-5 m-auto">
+      <label for="InputName" class="form-label">Nome:</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="mb-3 col-5 m-auto">
+      <label for="InputEmail" class="form-label">Email:</label>
+      <input type="email" class="form-control">
+    </div>
+    <div class="mb-3 col-5 m-auto">
+      <label for="InputPassword1" class="form-label" aria-describedby="passwordText">Password</label>
+      <input type="password" id="passwordText" class="form-control">
+      <div class="form-text">We'll never share your password with anyone else.</div>
+      <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+{% endblock %}
