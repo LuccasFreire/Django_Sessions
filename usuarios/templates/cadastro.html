@@ -29,6 +29,8 @@
     Erro interno do sistema!
   </div>
   {% endif %}
+
+  <h1>Cadastro</h1>
   <form method="POST" action="{% url 'valida_cadastro' %}">{% csrf_token %}
     <div class="mb-3 col-5 m-auto">
       <label for="nome" class="form-label">Nome:</label>
