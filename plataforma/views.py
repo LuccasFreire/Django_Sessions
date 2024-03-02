@@ -1,12 +1,12 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render 
 from django.http import HttpResponse
-
+from django.shortcuts import redirect
 
 # Create your views here.
 
 def home(request):
   if request.session.get('logado'):
-    return HttpResponse('Voce esta no sistema')
+    return render(request, 'home.html')
   else:
     return redirect('/auth/login/?status=2')
   

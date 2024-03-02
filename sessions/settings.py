@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sessions.wsgi.application'
 
-
+SESSION_COOKIE_AGE = 60 * 5 * 60
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
